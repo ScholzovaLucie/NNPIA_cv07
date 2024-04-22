@@ -1,42 +1,54 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Styly pro hlavní kontejner aplikace */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px; /* Mezery mezi komponentami */
+  background-color: #f0f0f0; /* Světlé pozadí pro lepší čitelnost */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Styly pro jednotlivé koncepty */
+.concept {
+  border: 1px solid #ccc; /* Subtilní rámeček kolem konceptu */
+  padding: 20px;
+  max-width: 600px; /* Maximální šířka pro lepší čitelnost */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Lehký stín pro efekt hloubky */
+  background-color: #ffffff; /* Bílé pozadí pro jednotlivé koncepty */
+  border-radius: 8px; /* Zaoblené rohy */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.concept h2 {
+  color: #333; /* Tmavší barva textu pro titulky */
+  margin-bottom: 10px; /* Odstup pod nadpisem */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.concept p {
+  color: #666; /* Světlejší barva textu pro popis */
+  line-height: 1.5; /* Větší řádkování pro lepší čitelnost */
+  margin-bottom: 20px; /* Odstup pod popisem */
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.concept img {
+  width: 25%; /* Šířka obrázku odpovídá šířce kontejneru */
+  height: auto; /* Automatická výška zachovává původní poměry obrázku */
+  border-radius: 4px; /* Zaoblené rohy obrázků */
 }
